@@ -75,11 +75,11 @@
                                             <td class=" dt-body-right">
                                                 <div class="btn-group" role="group" aria-label="Basic outlined example">
                                                     <a href="{{ route('products.detail', $product->batch_no) }}" class="btn btn-outline-secondary"><i class="icofont-eye text-info"></i></a>
-                                                    <a href="product-edit.html" class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a>
+                                                    <a href="{{ route('products.edit', $product->batch_no) }}" class="btn btn-outline-secondary"><i class="icofont-edit text-success"></i></a>
                                                     <button type="button" wire:click="delete('{{ $product->id }}')" class="btn btn-outline-secondary deleterow"><i class="icofont-ui-delete text-danger"></i></button>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr> 
                                         @endforeach
                                     </tbody>
 
