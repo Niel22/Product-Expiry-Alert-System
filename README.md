@@ -4,37 +4,46 @@ The **Product Expiry Alert Management System** helps store managers, staff, and 
 
 ---
 
-## How to start the project
+# =========================================
+# HOW TO START THE PROJECT
+# =========================================
 
-# Clone the repository
-git clone <repository-url>
-cd project-folder
+### Clone the repository
+``git clone https://github.com/Niel22/Product-Expiry-Alert-System.git``
+``cd project-folder``
 
-# Install PHP dependencies
-composer install
+### Install PHP dependencies
+``composer install``
 
-# Create environment file
-cp .env.example .env
+### Create environment file
+``cp .env.example .env``
 
-# Generate application key
-php artisan key:generate
+### Generate application key
+``php artisan key:generate``
 
-# Update database credentials in .env
-# DB_DATABASE=your_database_name
-# DB_USERNAME=your_database_user
-# DB_PASSWORD=your_database_password
+### -----------------------------------------
+### Update database credentials in .env
+### -----------------------------------------
+### DB_DATABASE=your_database_name
+### DB_USERNAME=your_database_user
+### DB_PASSWORD=your_database_password
 
-# Run migrations and seed default data
-php artisan migrate --seed
+### Run migrations and seed default data
+``php artisan migrate --seed``
 
-# Start the Laravel development server
-php artisan serve
+### Start the Laravel development server
+``php artisan serve``
 
-## Default Admin Login
+### Application will be available at:
+### http://127.0.0.1:8000
 
-Email: admin@example.com
-Password: password
-Role: Admin
+
+### =========================================
+### DEFAULT ADMIN LOGIN
+### =========================================
+### Email: admin@example.com
+### Password: password
+### Role: Admin
 
 
 ## Features
