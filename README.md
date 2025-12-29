@@ -4,6 +4,39 @@ The **Product Expiry Alert Management System** helps store managers, staff, and 
 
 ---
 
+## How to start the project
+
+# Clone the repository
+git clone <repository-url>
+cd project-folder
+
+# Install PHP dependencies
+composer install
+
+# Create environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Update database credentials in .env
+# DB_DATABASE=your_database_name
+# DB_USERNAME=your_database_user
+# DB_PASSWORD=your_database_password
+
+# Run migrations and seed default data
+php artisan migrate --seed
+
+# Start the Laravel development server
+php artisan serve
+
+## Default Admin Login
+
+Email: admin@example.com
+Password: password
+Role: Admin
+
+
 ## Features
 
 ### 1. **User Authentication**
